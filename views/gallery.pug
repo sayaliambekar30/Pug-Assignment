@@ -1,0 +1,36 @@
+include include/header.pug 
+
+html 
+    head 
+        title Gallery 
+    body 
+        //- include bootstrap.html
+        //- include header.pug
+
+        -const array = ["https://th.bing.com/th/id/OIP.B4T6Ovh03Q6j5fvsYLBybwHaEk?pid=ImgDet&w=2048&h=1264&rs=1","https://th.bing.com/th/id/OIP.RDUYCBnsLKTMSE0Et3uBhwHaEo?pid=ImgDet&rs=1","https://th.bing.com/th/id/R.36d40356fe6d25cc2989f711328540d2?rik=gaU3ttHD5tenZw&riu=http%3a%2f%2fimages.designtrends.com%2fwp-content%2fuploads%2f2015%2f11%2f06131130%2fPurple-and-Green-Background.jpg&ehk=Mk1iv61Pxc4IthQuuWyybcdXdx9vihMIGxG3Q74P%2bo4%3d&risl=&pid=ImgRaw&r=0","https://img4.goodfon.com/wallpaper/nbig/b/6b/tulips-petals-dew-water-drops-colors-purple-green-purple-flo.jpg","https://images.fineartamerica.com/images-medium-large/lavender-flora-don-wright.jpg","https://th.bing.com/th/id/OIP.yatUcoLzGVjCIYVOdccuPQHaFj?pid=ImgDet&rs=1","https://th.bing.com/th/id/OIP.mAw_a0ek9CPonOzkAy13hgHaE7?pid=ImgDet&rs=1","https://th.bing.com/th/id/OIP.dG_icNoRsFmUaBrXt6kRxwHaEo?pid=ImgDet&rs=1","https://th.bing.com/th/id/R.d483c6e1da5b8520f59b1d63921880b7?rik=rr9zQ%2by%2bWfG6UA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-VJPANNVP69g%2fUTt-ii2pCNI%2fAAAAAAAABM0%2f6_6rSKpgVOM%2fs1600%2fqwwq.jpeg&ehk=7yAW3NhhYrF9t9Acyn8G9yXXGKbwW%2bpuYNmSaNvQXRc%3d&risl=&pid=ImgRaw&r=0","https://i.pinimg.com/originals/8a/09/ad/8a09ade7e8b5cda92ded06692a5ed48a.jpg"];
+        
+
+        .container
+            
+               .row
+                  each i in array
+                    .col-sm-6
+                        .card(style='width: 18rem;')
+                        img.card-img-top(src=i alt='...')
+                        //- .card-body
+                        //-     h5.card-title Card title
+                        //-     p.card-text
+                        //-     | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                        //-     a.btn.btn-primary(href='#') Go somewhere
+                    //- .col-sm-6
+                    //-     .card(style='width: 18rem;')
+                    //-     img.card-img-top(src=i alt='...')
+                        //- .card-body
+                        //-     h5.card-title
+                            
+                            //- a.btn.btn-primary(href='#') Go somewhere
+
+
+
+
+include include/footer.pug 
